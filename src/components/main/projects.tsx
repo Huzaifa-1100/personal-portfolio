@@ -1,7 +1,6 @@
 import React from "react";
 import ProjectCards from "../sub/projectCards";
 import Link from "next/link";
-import path from "path";
 
 const Projects = () => {
   const projectsData = [
