@@ -31,10 +31,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-[#00021B] overflow-y-scroll overflow-x-hidden`}
       >
-        <StarsCanvas />
         <NavBar />
         {children}
         <Footer />
+        <StarsCanvas />
       </body>
     </html>
   );

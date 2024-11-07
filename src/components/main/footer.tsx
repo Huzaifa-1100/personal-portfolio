@@ -2,11 +2,11 @@ import {
   RxDiscordLogo,
   RxGithubLogo,
   RxInstagramLogo,
-  RxTwitterLogo,
   RxLinkedinLogo,
 } from "react-icons/rx";
 
 import { FaFacebook, FaMailBulk, FaYoutube } from "react-icons/fa";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -15,10 +15,12 @@ const Footer = () => {
         <div className="w-full h-full flex flex-row items-center justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px] ">Comunity</div>
+           <Link href={"youtube.com"}>
             <p className="flex flex-row text-center my-[15px] cursor-pointer items-center justify-center gap-1">
               <FaYoutube />
               <span className="text-[15px] ml-[6px] ">Youtube</span>
             </p>
+           </Link>
             <p className="flex flex-row text-center my-[15px] cursor-pointer items-center justify-center gap-1">
               <RxGithubLogo />
               <span className="text-[15px] ml-[6px] ">GitHub</span>

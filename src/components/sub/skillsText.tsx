@@ -7,7 +7,7 @@ import {
   slideInFromTop,
 } from "../../../utils/motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
-import Image from "next/image";
+
 const SkillsText = () => {
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center">
