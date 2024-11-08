@@ -9,10 +9,10 @@ interface Props {
 
 const ProjectCards = ({ src, title, description }: Props) => {
   return (
-    <div className="relative overflow-hidden  rounded-lg shadow-lg bg-transparent border border-[#2A0E61]">
+    <div className="relative overflow-hidden  rounded-xl shadow-xl shadow-gray-700 bg-transparent border-4 border-[#2A0E61] hover:translate-y-2  hover:duration-500 ">
       <Image
         src={src}
-        className="w-full h-72 overflow-clip  object-cover mb-2"
+        className="w-full h-72  object-fill mb-2 rounded-xl "
         width={1000}
         height={1000}
         alt={title}
@@ -27,3 +27,4 @@ const ProjectCards = ({ src, title, description }: Props) => {
 };
 
 export default ProjectCards;
+ 

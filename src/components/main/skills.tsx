@@ -12,24 +12,26 @@ import SkillsText from "../sub/skillsText";
 const Skills = () => {
   return (
     <section
-      style={{ transform: "scale:0.9)" }}
       id="skills"
-      className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
+      className=" flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20 z-[5] "
     >
       <SkillsText />
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 text-center">
         {Skill_data.map((image, index) => (
+          
           <SkillDataProvider
+          
             key={index}
             index={index}
             src={image.Image}
             height={image.height}
             width={image.width}
           />
+
         ))}
       </div>
 
-      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 text-center">
+      <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 text-center ">
         {Frontend_skill.map((image, index) => (
           <SkillDataProvider
             key={index}

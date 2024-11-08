@@ -4,6 +4,9 @@
 @tailwind utilities;
 
 
+.wrapper{
+  @apply max-w-screen-2xl mx-auto px-4;
+}
 
 .cursive {
   font-family: "Cedarville Cursive", cursive;
