@@ -8,6 +8,8 @@ import {
 } from "../../../utils/motion";
 import { SparklesIcon } from "@heroicons/react/16/solid";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "../ui/button";
 const HeroContent = () => {
   return (
     <motion.div
@@ -21,7 +23,7 @@ const HeroContent = () => {
           className="Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-90"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px]">
+          <h1 className="Welcome-text text-[13px] font-bold">
             Fullstack Developer Portfolio
           </h1>
         </motion.div>
@@ -50,7 +52,9 @@ const HeroContent = () => {
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Download CV
+          <Link href={"/cv/Resume-CV.pdf"} target="_blank">
+            Download CV
+          </Link>
         </motion.a>
       </div>
 
