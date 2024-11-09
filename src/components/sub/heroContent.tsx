@@ -22,8 +22,8 @@ const HeroContent = () => {
           variants={slideInFromTop}
           className="Welcome-box py-[8px] px-[4px] border border-[#7042f88b] opacity-90"
         >
-          <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
-          <h1 className="Welcome-text text-[13px] font-bold">
+          <SparklesIcon className="text-gray-200 mr-[10px] h-5 w-5" />
+          <h1 className="Welcome-text text-[13px] font-bold px-2">
             Fullstack Developer Portfolio
           </h1>
         </motion.div>
@@ -43,24 +43,28 @@ const HeroContent = () => {
         </motion.div>
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-lg text-gray-300 my-5 max-w-[600px] text-justify"
         >
-          I&apos;m a Full Stack Software Engineer with experience in website,
-          mobile and software development. Check out my projects and skills.
+          Welcome to my portfolio! I am Huzaifa Ayub, a passionate web developer
+          and aspiring <span className="font-bold">CERTIFIED CLOUD APPLIED GENERATIVE AI ENGINEER.</span>  My
+          portfolio showcases a range of projects built using cutting-edge
+          technologies like Next.js. Through continuous learning and hands-on
+          experience, I am committed to enhancing user experiences and solving
+          real-world problems with innovative web solutions.
         </motion.p>
-        <motion.a
-          variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
-        >
-          <Link href={"/cv/Resume-CV.pdf"} target="_blank">
-            Download CV
+        {/* Download CV Button */}
+        <motion.div variants={slideInFromLeft(1)}>
+          <Link href={"/cv/Resume-CV.pdf"} target="_blank" passHref>
+            <Button className="text-gray-200 text-lg bg-[#2A0E61] hover:translate-y-1  hover:duration-500 cursor-pointer rounded-lg py-2">
+              Download CV
+            </Button>
           </Link>
-        </motion.a>
+        </motion.div>
       </div>
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="w-full h-full flex justify-center items-center"
+        className="w-full h-full justify-center items-center hidden md:flex"
       >
         <Image
           src={"/mainIconsdark.svg"}

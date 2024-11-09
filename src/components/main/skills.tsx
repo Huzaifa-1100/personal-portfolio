@@ -83,12 +83,12 @@ const Skills = () => {
         <div className="w-full h-full z-[-10] opacity-30 absolute flex items-center justify-center bg-cover">
           <video
             preload="false"
-            className="w-full h-auto"
+            className="w-full h-auto border-l-blue-950"
             playsInline
             loop
             muted
             autoPlay
-            src="/cards-video.webm"
+            src="/videos/hole.webm"
           />
         </div>
       </div>

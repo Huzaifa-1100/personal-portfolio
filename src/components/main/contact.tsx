@@ -39,7 +39,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="lg:w-1/3 md:w-1/2 bg-transparent flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 z-[5]">
-          <h2 className="text-gray-200 text-4xl mb-1 font-medium title-font">
+          <h2 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to to-cyan-500 py-5">
             Contact
           </h2>
           <p className="leading-relaxed mb-5 text-gray-200">
@@ -54,7 +54,7 @@ const Contact = () => {
                 type="text"
                 id="name"
                 name="name"
-                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-gray-200 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-cyan-500 focus:ring-2 focus:ring-purple-500 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 required
               />
             </div>
@@ -69,7 +69,7 @@ const Contact = () => {
                 type="email"
                 id="email"
                 name="email"
-                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-gray-200 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-cyan-500 focus:ring-2 focus:ring-purple-500 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 required
               />
             </div>
@@ -84,7 +84,7 @@ const Contact = () => {
                 type="text"
                 id="subject"
                 name="subject"
-                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-gray-200 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-cyan-500 focus:ring-2 focus:ring-purple-500 text-base outline-none text-gray-200 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                 required
               />
             </div>
@@ -98,7 +98,7 @@ const Contact = () => {
               <textarea
                 id="message"
                 name="message"
-                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-gray-200 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-200 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                className="w-full bg-transparent rounded border-2 border-[#4b2794] focus:border-cyan-500 focus:ring-2 focus:ring-purple-500 h-32 text-base outline-none text-gray-200 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
                 defaultValue={""}
                 required
               />
@@ -122,7 +122,7 @@ const Contact = () => {
             loop
             muted
             autoPlay
-            src="/contact-bg.webm"
+            src="/videos/contact-bg.webm"
           />
         </div>
       </div>
