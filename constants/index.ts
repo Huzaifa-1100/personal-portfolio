@@ -67,8 +67,8 @@ export const Skill_data = [
     height: 80,
   },
   {
-    skill_name: "Node js",
-    Image: "/skills/node-js.png",
+    skill_name: "Sanity",
+    Image: "/skills/sanity.png",
     width: 80,
     height: 80,
   },
@@ -179,8 +179,8 @@ export const Frontend_skill = [
 
 export const Backend_skill = [
   {
-    skill_name: "Node js",
-    Image: "/skills/node-js.png",
+    skill_name: "Type Script",
+    Image: "/skills/ts.png",
     width: 80,
     height: 80,
   },

@@ -14,7 +14,7 @@ const Footer = () => {
     <div className=" w-full h-full bg-transparent text-gray-200 shadow-lg p-[15px] ">
       <div className="wrapper w-full flex flex-col items-center justify-center m-auto">
         <div className="w-full h-1 bg-gradient-to-r from-purple-500 to to-cyan-500 my-5"></div>
-        <div className="w-full h-full flex flex-row items-start justify-around flex-wrap">
+        <div className="w-full h-full hidden md:flex flex-row items-start justify-around flex-wrap">
           <div className="min-w-[200px] h-auto flex flex-col items-center justify-start">
             <div className="font-bold text-[16px] ">Comunity</div>
             {/* Youtube Link */}

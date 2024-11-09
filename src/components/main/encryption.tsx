@@ -58,7 +58,7 @@ const Encryption = () => {
           loop
           preload="false"
           autoPlay
-          className="w-full h-auto "
+          className="w-full h-auto hidden md:block "
           src="/videos/encryption.webm"
         />
       </div>

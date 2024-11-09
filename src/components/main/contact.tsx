@@ -4,17 +4,17 @@ const Contact = () => {
       id="contact"
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden pb-80 py-20"
     >
-      <div className="wrapper px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
-        <div className="lg:w-2/3 md:w-1/2 bg-transparent rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative hover:bg-transparent border-[#4b2794] hover:border-4 z-[5]">
+      <div className="wrapper grid  lg:grid-cols-2 grid-cols-1">
+        <div className=" bg-transparent rounded-lg overflow-hidden hidden  sm:mr-10 p-10 sm:flex items-end justify-start relative hover:bg-transparent border-[#4b2794] hover:border-4 z-[5]">
           <iframe
             width="100%"
             height="100%"
-            className="absolute inset-0"
+            className="absolute inset-0 "
             title="map"
             src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4228.266849250273!2d67.01643927537077!3d24.857416277931318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjTCsDUxJzI2LjciTiA2N8KwMDEnMDguNSJF!5e1!3m2!1sen!2s!4v1723989186181!5m2!1sen!2s"
             style={{ filter: " contrast(1.2) opacity(0.5)" }}
           />
-          <div className="bg-[#00021B] relative flex flex-wrap py-6 rounded shadow-md border-[#4b2794] border-4">
+          <div className="bg-[#00021B] relative hidden sm:flex flex-wrap py-6 rounded shadow-md border-[#4b2794] border-4">
             <div className="lg:w-1/2 px-6 ">
               <h2 className="title-font font-semibold text-gray-200 tracking-widest text-xs">
                 ADDRESS
@@ -38,7 +38,8 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="lg:w-1/3 md:w-1/2 bg-transparent flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 z-[5]">
+
+        <div className=" bg-transparent flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0 z-[5]">
           <h2 className="text-[40px] font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to to-cyan-500 py-5">
             Contact
           </h2>
